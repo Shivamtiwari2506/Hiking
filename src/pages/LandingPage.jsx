@@ -66,7 +66,7 @@ const LandingPage = () => {
               <div className="flex gap-4 items-center font-serif brightness-125">
                 <span>Scroll Down</span>
                 <span className="animate-bounce ">
-                  <img src={downIcon} alt="Scroll Down Icon" className="w-5" />
+                  <img src={downIcon} alt="Scroll Down Icon" className=" md:hover:scale-125 transition-transform duration-300 ease-in-out"/>
                 </span>
               </div>
             </div>

@@ -27,23 +27,43 @@ const Navbar = () => {
         {/* Normal nav for large screens */}
         <div className="lg:flex hidden">
           <ul className="flex items-center justify-between">
-            <li className="mx-5">
-              <Link to="/">Equipment</Link>
+            <li className="mx-5 relative group">
+              <Link
+                to="/"
+                className="text-white transition-all duration-300 ease-in-out group-hover:scale-105 inline-block"
+              >
+                Equipment
+                <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-[#FBD784] transition-all duration-300 group-hover:w-full" />
+              </Link>
             </li>
-            <li className="mx-5">
-              <Link to="#">About us</Link>
+            <li className="mx-5 relative group">
+              <Link
+                to="#"
+                className="text-white transition-all duration-300 ease-in-out group-hover:scale-105 inline-block"
+              >
+                About us
+                <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-[#FBD784] transition-all duration-300 group-hover:w-full" />
+              </Link>
             </li>
-            <li className="mx-5">
-              <Link to="#">Blog</Link>
+            <li className="mx-5 relative group">
+              <Link
+                to="#"
+                className="text-white transition-all duration-300 ease-in-out group-hover:scale-105 inline-block"
+              >
+                Blog
+                <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-[#FBD784] transition-all duration-300 group-hover:w-full" />
+              </Link>
             </li>
           </ul>
         </div>
 
-        <div className="lg:flex items-center space-x-2 hidden">
-          <img src={icon} alt="Cart" className="w-6" />
-          <p>
+        <div className="lg:flex items-center space-x-2 hidden relative group font-semibold">
+          <img src={icon} alt="Cart" className="w-6 transition-all duration-300 ease-in-out group-hover:scale-105 inline-block" />
+          <p className="transition-all duration-300 ease-in-out group-hover:scale-105 inline-block">
             <Link to="#">Account</Link>
           </p>
+          <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-[#FBD784] transition-all duration-300 group-hover:w-full" />
+
         </div>
 
         <div className="lg:hidden flex items-center absolute right-4 top-4">
