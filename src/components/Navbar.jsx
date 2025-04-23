@@ -25,7 +25,7 @@ const Navbar = () => {
         {/* Hamburger icon for small screens */}
 
         {/* Normal nav for large screens */}
-        <div className="lg:flex hidden">
+        <div className="md:flex hidden">
           <ul className="flex items-center justify-between">
             <li className="mx-5 relative group">
               <Link
@@ -57,7 +57,7 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <div className="lg:flex items-center space-x-2 hidden relative group font-semibold">
+        <div className="md:flex items-center space-x-2 hidden relative group font-semibold">
           <img src={icon} alt="Cart" className="w-6 transition-all duration-300 ease-in-out group-hover:scale-105 inline-block" />
           <p className="transition-all duration-300 ease-in-out group-hover:scale-105 inline-block">
             <Link to="#">Account</Link>
@@ -66,7 +66,7 @@ const Navbar = () => {
 
         </div>
 
-        <div className="lg:hidden flex items-center absolute right-4 top-4">
+        <div className="md:hidden flex items-center absolute right-4 top-4">
           <button onClick={toggleMenu}>
             <span className="text-4xl text-white">
               {isMenuOpen ? "×" : "☰"}
